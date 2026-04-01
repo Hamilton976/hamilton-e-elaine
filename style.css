@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.3em;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeIn 3s ease-in-out;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: white;
+    color: #ff4d6d;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ffe0e9;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Corações */
+.heart {
+    position: fixed;
+    color: red;
+    font-size: 20px;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+.galeria {
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+.pedido {
+    margin-top: 50px;
+}
+
+.botoes {
+    margin-top: 20px;
+    position: relative;
+}
+
+.sim {
+    background: #00c853;
+    color: white;
+    margin: 10px;
+}
+
+.nao {
+    background: #d50000;
+    color: white;
+    position: absolute;
+    margin: 10px;
+}
+
+#resposta {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.contador {
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+#tempo {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: bold;
+}
